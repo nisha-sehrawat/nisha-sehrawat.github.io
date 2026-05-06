@@ -3,74 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nisha Sehrawat | Professional Portfolio</title>
+    <title>Nisha Sehrawat | Portfolio</title>
     <style>
-        :root { --primary: #1a3a5f; --secondary: #f4f4f4; --text: #333; }
-        body { font-family: 'Arial', sans-serif; margin: 0; color: var(--text); line-height: 1.6; background-color: #fff; scroll-behavior: smooth; }
-        header { background: var(--primary); color: white; padding: 3rem 2rem; text-align: center; }
-        nav { background: #fff; padding: 1rem; position: sticky; top: 0; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center; z-index: 1000; }
-        nav a { margin: 0 15px; text-decoration: none; color: var(--primary); font-weight: bold; }
-        .container { max-width: 1100px; margin: auto; padding: 4rem 2rem; }
-        .section-title { border-bottom: 3px solid var(--primary); display: inline-block; margin-bottom: 30px; color: var(--primary); text-transform: uppercase; }
-        
-        /* Portfolio Gallery */
-        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
-        .gallery-item { border: 1px solid #ddd; border-radius: 12px; overflow: hidden; background: white; transition: 0.3s; box-shadow: 0 4px 8px rgba(0,0,0,0.05); }
-        .gallery-item:hover { transform: translateY(-5px); box-shadow: 0 8px 15px rgba(0,0,0,0.1); }
-        .gallery-item img { width: 100%; height: auto; display: block; border-bottom: 1px solid #eee; }
-        .gallery-text { padding: 1.2rem; text-align: center; }
-        
-        /* Contact Section styling */
-        .contact-info { background: var(--secondary); padding: 2rem; border-radius: 12px; text-align: center; }
-        footer { background: var(--primary); color: white; text-align: center; padding: 1.5rem; margin-top: 3rem; }
+        /* General Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f7f6;
+        }
+
+        header {
+            background: #1a3a5f;
+            color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        nav {
+            background: #fff;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #1a3a5f;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        /* Section Headlines */
+        h2 {
+            text-align: center;
+            color: #1a3a5f;
+            border-bottom: 2px solid #1a3a5f;
+            display: inline-block;
+            margin-bottom: 30px;
+        }
+
+        .section-center { text-align: center; }
+
+        /* Project Grid */
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        .project-card {
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            border: 1px solid #ddd;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .project-card p {
+            padding: 15px;
+            margin: 0;
+            font-weight: bold;
+            background: #f8f9fa;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #1a3a5f;
+            color: white;
+            margin-top: 50px;
+        }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>NISHA SEHRAWAT</h1>
-    <p>BCA Student | Data Analyst | Cybersecurity | Graphic Designer</p>
-</header>
+    <header>
+        <h1>NISHA SEHRAWAT</h1>
+        <p>BCA Student | Data Analyst | Cybersecurity | Graphic Designer</p>
+    </header>
 
-<nav>
-    <a href="#about">About</a>
-    <a href="#portfolio">Design Work</a>
-    <a href="#contact">Contact</a>
-</nav>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Design Work</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-<!-- ABOUT SECTION -->
-<div class="container" id="about">
-    <h2 class="section-title">About Me</h2>
-    <p>I am a dedicated BCA student with a passion for bridging the gap between data analysis, cybersecurity, and creative design. My work focuses on creating visual stories through graphic design while maintaining a strong technical foundation in threat analysis and data structures.</p>
-</div>
+    <div class="container">
+        
+        <!-- About Section -->
+        <section id="about" class="section-center">
+            <h2>ABOUT ME</h2>
+            <p>I am a dedicated BCA student from Sonipat with a passion for bridging the gap between data analysis, cybersecurity, and creative design. My work focuses on creating visual stories through graphic design while maintaining a strong technical foundation in threat analysis and data structures.</p>
+        </section>
 
-<!-- PORTFOLIO SECTION -->
-<div class="container" id="portfolio">
-    <h2 class="section-title">My Design Projects</h2>
-    <div class="gallery">
-        <!-- The images from your folder -->
-        <div class="gallery-item"><img src="food poster.jpg"><div class="gallery-text"><h3>Food Ad 1</h3></div></div>
-        <div class="gallery-item"><img src="food poster (1).jpg"><div class="gallery-text"><h3>Food Ad 2</h3></div></div>
-        <div class="gallery-item"><img src="travel poster.jpg"><div class="gallery-text"><h3>Travel Campaign 1</h3></div></div>
-        <div class="gallery-item"><img src="travel poster (1).jpg"><div class="gallery-text"><h3>Travel Campaign 2</h3></div></div>
-        <div class="gallery-item"><img src="festivals poster.jpg"><div class="gallery-text"><h3>Festival Design 1</h3></div></div>
-        <div class="gallery-item"><img src="festivals poster (1).jpg"><div class="gallery-text"><h3>Festival Design 2</h3></div></div>
+        <hr style="margin: 50px 0; border: 0; border-top: 1px solid #ddd;">
+
+        <!-- Projects Section -->
+        <section id="projects" class="section-center">
+            <h2>MY DESIGN PROJECTS</h2>
+            <div class="project-grid">
+                
+                <!-- Food Category (6 items) -->
+                <div class="project-card"><img src="food poster.jpg" alt="Food Ad 1"><p>Food Ad 1</p></div>
+                <div class="project-card"><img src="food poster (1).jpg" alt="Food Ad 2"><p>Food Ad 2</p></div>
+                <div class="project-card"><img src="food poster (2).jpg" alt="Food Ad 3"><p>Food Ad 3</p></div>
+                <div class="project-card"><img src="food poster (3).jpg" alt="Food Ad 4"><p>Food Ad 4</p></div>
+                <div class="project-card"><img src="food poster (4).jpg" alt="Food Ad 5"><p>Food Ad 5</p></div>
+                <div class="project-card"><img src="food poster (5).jpg" alt="Food Ad 6"><p>Food Ad 6</p></div>
+
+                <!-- Festival Category (3 items) -->
+                <div class="project-card"><img src="festivals poster.jpg" alt="Festival 1"><p>Festival Design 1</p></div>
+                <div class="project-card"><img src="festivals poster (1).jpg" alt="Festival 2"><p>Festival Design 2</p></div>
+                <div class="project-card"><img src="festivals poster (2).jpg" alt="Festival 3"><p>Festival Design 3</p></div>
+
+                <!-- Travel Category (5 items) -->
+                <div class="project-card"><img src="travel poster.jpg" alt="Travel 1"><p>Travel Campaign 1</p></div>
+                <div class="project-card"><img src="travel poster (1).jpg" alt="Travel 2"><p>Travel Campaign 2</p></div>
+                <div class="project-card"><img src="travel poster (2).jpg" alt="Travel 3"><p>Travel Campaign 3</p></div>
+                <div class="project-card"><img src="travel poster (3).jpg" alt="Travel 4"><p>Travel Campaign 4</p></div>
+                <div class="project-card"><img src="travel poster (4).jpg" alt="Travel 5"><p>Travel Campaign 5</p></div>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section-center" style="margin-top: 60px;">
+            <h2>CONTACT ME</h2>
+            <p>Interested in collaborating? Feel free to reach out!</p>
+            <p><strong>Email:</strong> sehrawatnisha14@gmail.com</p>
+            <p><strong>Location:</strong> Sonipat, Haryana</p>
+        </section>
+
     </div>
-</div>
 
-<!-- CONTACT SECTION -->
-<div class="container" id="contact">
-    <h2 class="section-title">Contact Me</h2>
-    <div class="contact-info">
-        <p>Interested in collaborating? Feel free to reach out!</p>
-        <p><strong>Email:</strong> nishasehrawat@example.com</p>
-        <p><strong>Location:</strong> Sonipat, Haryana</p>
-    </div>
-</div>
-
-<footer>
-    <p>&copy; 2026 Nisha Sehrawat</p>
-</footer>
+    <footer>
+        <p>&copy; 2026 Nisha Sehrawat</p>
+    </footer>
 
 </body>
 </html>
