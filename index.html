@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nisha Sehrawat | Professional Portfolio</title>
+    <style>
+        :root { --primary: #1a3a5f; --secondary: #f4f4f4; --text: #333; }
+        body { font-family: 'Arial', sans-serif; margin: 0; color: var(--text); line-height: 1.6; background-color: #fff; }
+        header { background: var(--primary); color: white; padding: 2rem; text-align: center; }
+        nav { background: #fff; padding: 1rem; position: sticky; top: 0; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center; }
+        nav a { margin: 0 15px; text-decoration: none; color: var(--primary); font-weight: bold; }
+        .container { max-width: 1100px; margin: auto; padding: 2rem; }
+        .section-title { border-bottom: 2px solid var(--primary); display: inline-block; margin-bottom: 30px; color: var(--primary); text-transform: uppercase; }
+        
+        /* Portfolio Gallery Grid */
+        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
+        .gallery-item { border: 1px solid #ddd; border-radius: 12px; overflow: hidden; background: white; transition: 0.3s; box-shadow: 0 4px 8px rgba(0,0,0,0.05); }
+        .gallery-item:hover { transform: translateY(-5px); box-shadow: 0 8px 15px rgba(0,0,0,0.1); }
+        .gallery-item img { width: 100%; height: auto; display: block; border-bottom: 1px solid #eee; }
+        .gallery-text { padding: 1.2rem; text-align: center; }
+        .gallery-text h3 { margin: 0 0 5px 0; color: var(--primary); font-size: 1.1rem; }
+        footer { background: var(--primary); color: white; text-align: center; padding: 1.5rem; margin-top: 3rem; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>NISHA SEHRAWAT</h1>
+    <p>BCA Student | Data Analyst | Cybersecurity | Graphic Designer</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#portfolio">Design Work</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="container" id="portfolio">
+    <h2 class="section-title">My Design Projects</h2>
+    <div class="gallery">
+        
+        <!-- FOOD POSTERS -->
+        <div class="gallery-item"><img src="food poster.jpg"><div class="gallery-text"><h3>Food Ad 1</h3></div></div>
+        <div class="gallery-item"><img src="food poster (1).jpg"><div class="gallery-text"><h3>Food Ad 2</h3></div></div>
+        <div class="gallery-item"><img src="food poster (2).jpg"><div class="gallery-text"><h3>Food Ad 3</h3></div></div>
+        <div class="gallery-item"><img src="food poster (3).jpg"><div class="gallery-text"><h3>Food Ad 4</h3></div></div>
+        <div class="gallery-item"><img src="food poster (4).jpg"><div class="gallery-text"><h3>Food Ad 5</h3></div></div>
+        <div class="gallery-item"><img src="food poster (5).jpg"><div class="gallery-text"><h3>Food Ad 6</h3></div></div>
+
+        <!-- TRAVEL POSTERS -->
+        <div class="gallery-item"><img src="travel poster.jpg"><div class="gallery-text"><h3>Travel Campaign 1</h3></div></div>
+        <div class="gallery-item"><img src="travel poster (1).jpg"><div class="gallery-text"><h3>Travel Campaign 2</h3></div></div>
+        <div class="gallery-item"><img src="travel poster (2).jpg"><div class="gallery-text"><h3>Travel Campaign 3</h3></div></div>
+        <div class="gallery-item"><img src="travel poster (3).jpg"><div class="gallery-text"><h3>Travel Campaign 4</h3></div></div>
+
+        <!-- FESTIVAL POSTERS -->
+        <div class="gallery-item"><img src="festivals poster.jpg"><div class="gallery-text"><h3>Festival Design 1</h3></div></div>
+        <div class="gallery-item"><img src="festivals poster (1).jpg"><div class="gallery-text"><h3>Festival Design 2</h3></div></div>
+        <div class="gallery-item"><img src="festivals poster (2).jpg"><div class="gallery-text"><h3>Festival Design 3</h3></div></div>
+
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 Nisha Sehrawat | 📍 Sonipat, Haryana</p>
+</footer>
+
+</body>
+</html>
